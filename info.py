@@ -1,6 +1,6 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit @Aniwatch_India
+# Subscribe YouTube Channel For Amazing Bot @Aniwatch_Tamil
+# Ask Doubt on telegram @Aniwatch_Owner
 
 
 import re
@@ -10,23 +10,23 @@ from Script import script
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', '16229284'))
-API_HASH = environ.get('API_HASH', 'ebd1fead3cc15343bea10b5c164165ba')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6869343193:AAGmZwghTCbQDegYTkY5KYplT-1QCflSrrc")
+SESSION = environ.get('SESSION', 'Aniwatchhelpergbot')
+API_ID = int(environ.get('API_ID', '27068498'))
+API_HASH = environ.get('API_HASH', 'ebcf398a11320aa4776da819d1d919c0')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7531764528:AAHXJhinGjsytCk64I_hBYVmhgCKuT_of6o")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/fbb9f9f774dacff88f8d9-148d5710dfc8f4ca35.jpg')).split()
+PICS = (environ.get('PICS', 'https://files.catbox.moe/ni7buv.jpg')).split()
 
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1103137195').split()] # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2092309661').split()] # For Multiple Id Use One Space Between Each.
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002023083749'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002571214477'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]  # For Multiple Id Use One Space Between Each.
@@ -45,23 +45,23 @@ reqst_channel = environ.get('REQST_CHANNEL_ID', '')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 
 # This Is Your Bot Support Group Id , Here Bot Will Not Give File Because This Is Support Group.
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002078559102')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # This Channel Is For Index Request 
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 
 # This Channel Is For /batch command file store.
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002023083749')).split()]  # For Multiple Id Use One Space Between Each.
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002536483539')).split()]  # For Multiple Id Use One Space Between Each.
 
 # This Channel Is For Delete Index File, Forward Your File In This Channel Which You Want To Delete Then Bot Automatically Delete That File From Database.
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]  # For Multiple Id Use One Space Between Each.
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://devwilson:MDBots1976@mdbots.iaigyrl.mongodb.net/?retryWrites=true&w=majority&appName=MDbots")   # IF Multiple Database Is False Then Fill Only This Database Url.
-DATABASE_NAME = environ.get('DATABASE_NAME', "MDL_File")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://djsjjsjjajajsdjdjdj:ZqBaYrXfzw8asIpy@cluster0.ftmjmcm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_NAME = environ.get('DATABASE_NAME', "Aniwatch")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'aniwatchcollection')
 
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
@@ -88,10 +88,10 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+nzb8EcPaMIg3N2Zl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/AnimeRips')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+nzb8EcPaMIg3N2Zl') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/AnimeRips_owner')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Aniwatch_Discussion')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Aniwatch_india')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Aniwatch_Discussion') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Aniwatch_owner')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -128,7 +128,7 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'papajiurl.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '648de631f164bb35c4a394c4846fa55a4b45b1f1')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+7TfUUdYITJwxZjBl') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/papajiurldownload') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
 # Others
@@ -150,9 +150,9 @@ QUALITIES = ["360p", "480p", "720p", "1080p", "1440p", "2160p"]
 YEARS = ["1900", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"]
 
 
-                           # Don't Remove Credit @VJ_Botz
-                           # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-                           # Ask Doubt on telegram @KingVJ01
+                           # Don't Remove Credit @Aniwatch_India
+                           # Subscribe YouTube Channel For Amazing Bot @Aniwatch_Tamil
+                           # Ask Doubt on telegram @Aniwatch_Owner
 
 
 # Online Stream and Download
@@ -193,6 +193,6 @@ else:
     SEC_FILE_DB_URI = S_DB_URI    # This Db is for File Data Store When First Db Is Going To Be Full.
 
 
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit @Aniwatch_Owner
+# Subscribe YouTube Channel For Amazing Bot @Aniwatch_Tamil
+# Ask Doubt on telegram @Aniwatch_Owner
